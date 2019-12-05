@@ -1,6 +1,10 @@
 // year: number
 function isLeapYear(year) {
     //TODO
+    label:
+    if (year % 400 == 0) return False, break label;
+    if (year % 4 == 0) return True;
+    
 }
 
 // month: number
