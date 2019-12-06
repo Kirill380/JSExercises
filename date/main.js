@@ -1,15 +1,26 @@
 // year: number
 function isLeapYear(year) {
-    //TODO
-    label:
-    if (year % 400 == 0) return False, break label;
-    if (year % 4 == 0) return True;
-    
+    if (year < 0 || year != year || Number(year) != Number(year) || year == null || year == Infinity || year == -Infinity) {
+        throw new Error('Invalid value of year');
+    }
+
+    return year % 4 == 0 && year % 100 != 0 || year % 400 == 0
 }
 
 // month: number
 function monthLength(month) {
-    //TODO
+    if (month < 1 || month > 12) {
+        throw new Error('Invalid value of month');
+    }
+    if ([4, 6, 9, 11].includes(month)) {
+        return 30
+    }
+    if ([1, 3, 5, 7, 8, 10, 12].includes(month)) {
+        return 31
+    }
+    if (month == 2) {
+        return 28
+    }
 }
 
 // date: string, format dd.MM.YYYY

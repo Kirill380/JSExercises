@@ -35,8 +35,8 @@ describe("is leap year", function() {
 
 describe("month length", function() {
 
-    it(`length of February is 30`, function() {
-        assert.equal(monthLength(2), 30);
+    it(`length of February is 28`, function() {
+        assert.equal(monthLength(2), 28);
     });
 
     describe("return 30", function() {
@@ -45,7 +45,7 @@ describe("month length", function() {
 
         function makeTest(x) {
             it(`length of ${x} is 30`, function() {
-                assert.equal(monthLength(x), 31);
+                assert.equal(monthLength(x), 30);
             });
         }
 
