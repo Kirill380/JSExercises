@@ -25,10 +25,10 @@ function monthLength(month) {
 
 // date: string, format dd.MM.YYYY
 function dayOfWeek(date) {
-    let arr = "date".split(".");
-    let day = arr[0];
-    let month = arr[1];
-    let year = arr[2];
+    let arr = date.split(".");
+    let day = +arr[0];
+    let month = +arr[1];
+    let year = +arr[2];
 
     century = Math.round(year/100);
 
@@ -45,7 +45,7 @@ function dayOfWeek(date) {
         centuryShift = 2
         }
 
-    decimalYear = (year - (Math.round(year/100));
+    decimalYear = year - Math.round(year/100);
     
     yearShift = ((decimalYear + (decimalYear/4)) % 7);
 
@@ -74,27 +74,27 @@ function dayOfWeek(date) {
     dayShift = (day % 7);
     
     sumShift = (centuryShift + yearShift + monthShift + dayShift);
-    dayOfWeek = Math.round(sumShift/7);
+    weekIndex = Math.round(sumShift/7);
 
-    if (dayOfWeek == 1) {
+    if (weekIndex == 1) {
         return 'Monday'
         }
-    if (dayOfWeek == 2) {
+    if (weekIndex == 2) {
         return 'Tuesday'
         }
-    if (dayOfWeek == 3) {
+    if (weekIndex == 3) {
         return 'Wednesday'
         }
-    if (dayOfWeek == 4) {
+    if (weekIndex == 4) {
         return 'Thursday'
         }
-    if (dayOfWeek == 5) {
+    if (weekIndex == 5) {
         return 'Friday'
         }
-    if (dayOfWeek == 6) {
+    if (weekIndex == 6) {
         return 'Saturday'
         }
-    if (dayOfWeek == 7) {
+    if (weekIndex == 7) {
         return 'Sunday'
         }
 }
