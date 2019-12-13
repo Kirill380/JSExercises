@@ -120,15 +120,56 @@ describe("get day of week by date", function() {
     });
     describe("throw exception on invalid value", function() {
 
-        let invalidValue = ['12,2.01.1234','12.32.1006','32.2.00','','07.07.-1006','07.07.-1006','12..2.08','0.-.=','   '];
-        function makeTest(x) {
+        let dateInvalidValue = [''];
+        function makeTestForDate(x) {
+            it(`${x} throws exception`, function() {
+                assert.throws(() => dayOfWeek(x), 'Invalid value of date');
+            });
+        }
+
+        for (let i = 0;
+            i < dateInvalidValue.length; i++) {
+            makeTestForDate(dateInvalidValue[i]);
+        }
+
+
+        let dayInvalidValue = ['12,2.01.1234', '32.2.00', '     ', '0.-.='];
+        function makeTestForDay(x) {
+            it(`${x} throws exception`, function() {
+                assert.throws(() => dayOfWeek(x), 'Invalid value of day');
+            });
+        }
+
+        for (let i = 0;
+            i < dayInvalidValue.length; i++) {
+            makeTestForDay(dayInvalidValue[i]);
+        }
+
+
+        let monthInvalidValue = ['12.32.1006', '12..2.08'];
+        function makeTestForMonth(x) {
             it(`${x} throws exception`, function() {
                 assert.throws(() => dayOfWeek(x), 'Invalid value of month');
             });
         }
 
-        for (let i = 0; i < invalidValue.length; i++) {
-            makeTest(invalidValue[i]);
+        for (let i = 0;
+           i < monthInvalidValue.length; i++) {
+            makeTestForMonth(monthInvalidValue[i]);
+        }
+
+
+
+        let yearInvalidValue = ['07.07.-1006'];
+        function makeTestForYear(x) {
+            it(`${x} throws exception`, function() {
+                assert.throws(() => dayOfWeek(x), 'Invalid value of year');
+            });
+        }
+
+        for (let i = 0;
+            i < yearInvalidValue.length; i++) {
+            makeTestForYear(yearInvalidValue[i]);
         }
 
     });

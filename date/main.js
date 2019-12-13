@@ -26,6 +26,10 @@ function monthLength(month) {
 // date: string, format dd.MM.YYYY
 function dayOfWeek(date) {
 
+        if (!date || date.length == 0) {
+            throw new Error('Invalid value of date')
+            };
+
     let arr = date.split(".");
     let dayNumber = Number(arr[0]);
     let monthNumber = Number(arr[1]);
@@ -83,4 +87,4 @@ do {
   alert (yyyy);
   };
   yyyy++
-} while (yyyy !== 2117);
+} while (yyyy !== 2002);
