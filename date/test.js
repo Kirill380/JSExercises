@@ -103,20 +103,20 @@ describe("get day of week by date", function() {
         assert.equal(dayOfWeek('07.05.2016'), 'Saturday');
     });
 
-    it(`13.05.2016 is Friday`, function() {
+    it('13.05.2016 is Friday', function() {
         assert.equal(dayOfWeek('13.05.2016'), 'Friday');
     });
-    it(`16.06.1910 is Thursday`, function() {
-        assert.equal(dayOfWeek('13.05.2016'), 'Thursday');
+    it('16.06.1910 is Thursday', function() {
+        assert.equal(dayOfWeek('16.06.1910'), 'Thursday');
     });
-    it(`11.10.2006 is Wednesday`, function() {
-        assert.equal(dayOfWeek('13.05.2016'), 'Wednesday');
+    it('11.10.2006 is Wednesday', function() {
+        assert.equal(dayOfWeek('11.10.2006'), 'Wednesday');
     });
-    it(`17.09.2019 is Tuesday`, function() {
-        assert.equal(dayOfWeek('13.05.2016'), 'Tuesday');
+    it('17.09.2019 is Tuesday', function() {
+        assert.equal(dayOfWeek('17.09.2019'), 'Tuesday');
     });
-    it(`04.01.1999 is Monday`, function() {
-        assert.equal(dayOfWeek('13.05.2016'), 'Monday');
+    it('04.01.1999 is Monday', function() {
+        assert.equal(dayOfWeek('04.01.1999'), 'Monday');
     });
     describe("throw exception on invalid value", function() {
 

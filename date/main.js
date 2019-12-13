@@ -26,75 +26,50 @@ function monthLength(month) {
 // date: string, format dd.MM.YYYY
 function dayOfWeek(date) {
     let arr = date.split(".");
-    let day = +arr[0];
-    let month = +arr[1];
-    let year = +arr[2];
+    let dayNumber = Number(arr[0]);
+    let monthNumber = Number(arr[1]);
+    let yearNumber = Number(arr[2]);
 
-    century = Math.round(year/100);
+    let century = Math.floor(yearNumber/100);
+    let centuryShift;
 
     if ([3, 7, 11, 15, 19].includes(century)) {
         centuryShift = 0
-        }
+    }
     if ([4, 8, 12, 16, 20].includes(century)) {
         centuryShift = 6
-        }
+    }
     if ([1, 5, 9, 13, 17, 21].includes(century)) {
         centuryShift = 4
-        }
+     }
     if ([2, 6, 10, 14, 18].includes(century)) {
         centuryShift = 2
-        }
+     }
 
-    decimalYear = year - Math.round(year/100);
-    
-    yearShift = ((decimalYear + (decimalYear/4)) % 7);
+    let decimalYear = (yearNumber % 100);
 
-    if ([01, 10].includes(month)) {
-        monthShift = 0
-        }
-    if ([02, 03, 11].includes(month)) {
-        monthShift = 3
-        }
-    if ([04, 07].includes(month)) {
-        monthShift = 6
-        }
-    if ([05].includes(month)) {
-        monthShift = 1
-        }
-    if ([06].includes(month)) {
-        monthShift = 4
-        }
-    if ([08].includes(month)) {
-        monthShift = 2
-        }
-    if ([09, 12].includes(month)) {
-        monthShift = 5
-        }
+    let yearShift = ((decimalYear + (decimalYear/4)) % 7);
+    yearShift = Math.floor (yearShift);
 
-    dayShift = (day % 7);
-    
-    sumShift = (centuryShift + yearShift + monthShift + dayShift);
-    weekIndex = Math.round(sumShift/7);
+    let monthShifts = [0,3,3,6,1,4,6,2,5,0,3,5];
+    let monthShift = monthShifts[monthNumber-1];
 
-    if (weekIndex == 1) {
-        return 'Monday'
-        }
-    if (weekIndex == 2) {
-        return 'Tuesday'
-        }
-    if (weekIndex == 3) {
-        return 'Wednesday'
-        }
-    if (weekIndex == 4) {
-        return 'Thursday'
-        }
-    if (weekIndex == 5) {
-        return 'Friday'
-        }
-    if (weekIndex == 6) {
-        return 'Saturday'
-        }
-    if (weekIndex == 7) {
-        return 'Sunday'
-        }
+
+     let leap = isLeapYear(yearNumber)*([1,2].includes(monthNumber))
+     let sumShift = (centuryShift + yearShift + monthShift + dayNumber - leap);
+     let weekIndex = Math.floor(sumShift % 7);
+
+     let day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+     return day[weekIndex];
 }
+
+function getDate(dd,mm,yyyy) {return `${dd}.${mm}.${yyyy}`}
+
+yyyy = 1997;
+do {
+  dayOfWeek(getDate(13,07,yyyy));
+  if (dayOfWeek(getDate(13,07,yyyy)) == 'Friday') {
+  alert (yyyy);
+  };
+  yyyy++
+} while (yyyy !== 2117);
