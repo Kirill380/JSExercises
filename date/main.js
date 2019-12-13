@@ -25,10 +25,21 @@ function monthLength(month) {
 
 // date: string, format dd.MM.YYYY
 function dayOfWeek(date) {
+
     let arr = date.split(".");
     let dayNumber = Number(arr[0]);
     let monthNumber = Number(arr[1]);
     let yearNumber = Number(arr[2]);
+
+        if (Number(dayNumber) != Number(dayNumber) || dayNumber != dayNumber || dayNumber < 0 || dayNumber > 31 || dayNumber == null || dayNumber == Infinity || dayNumber == -Infinity || dayNumber == 0) {
+            throw new Error('Invalid value of day')
+            };
+        if (Number(monthNumber) != Number(monthNumber) || monthNumber != monthNumber || monthNumber < 0 || monthNumber > 12 || monthNumber == null || monthNumber == Infinity || monthNumber == -Infinity || monthNumber == 0) {
+            throw new Error('Invalid value of month')
+            };
+        if (Number(yearNumber) != Number(yearNumber) || yearNumber != yearNumber || yearNumber < 0 || yearNumber == null || yearNumber == Infinity || yearNumber == -Infinity || yearNumber == 0) {
+            throw new Error('Invalid value of year')
+            };
 
     let century = Math.floor(yearNumber/100);
     let centuryShift;
