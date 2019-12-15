@@ -41,8 +41,12 @@ paper.click( e => {
     if (e.target.tagName == 'svg' || e.target.tagName == 'path') {
         paper.circle(e.offsetX, e.offsetY, 15)
             .attr(style)
+            .mouseover(function(){ this.stop().animate({r:25}, 500, mina.elastic()) })
+            .mouseout(function(){ this.stop().animate({r:15}, 300, mina.easeinout()) })
             .data("i", pathArray.length)
-            .drag(move)
+            .drag(move,
+            () => path.stop().animate({opacity: .2}, 200, mina.easeinout()),
+            () => path.stop().animate({opacity: 1}, 500, mina.easeinout()))
 
         pathArray.push({
             x : e.offsetX,
