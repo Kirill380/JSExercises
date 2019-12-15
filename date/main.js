@@ -23,10 +23,16 @@ function monthLength(month) {
     }
 }
 
+function isNumber(num) {
+        if (Number(num) != Number(num) || num != num || num < 0 || num == null || num == Infinity || num == -Infinity || num == 0) {
+            throw new Error('Invalid value of date')
+            }
+}
+
 // date: string, format dd.MM.YYYY
 function dayOfWeek(date) {
 
-        if (!date || date.length == 0) {
+        if (!date) {
             throw new Error('Invalid value of date')
             };
 
@@ -35,15 +41,15 @@ function dayOfWeek(date) {
     let monthNumber = Number(arr[1]);
     let yearNumber = Number(arr[2]);
 
-        if (Number(dayNumber) != Number(dayNumber) || dayNumber != dayNumber || dayNumber < 0 || dayNumber > 31 || dayNumber == null || dayNumber == Infinity || dayNumber == -Infinity || dayNumber == 0) {
-            throw new Error('Invalid value of day')
-            };
-        if (Number(monthNumber) != Number(monthNumber) || monthNumber != monthNumber || monthNumber < 0 || monthNumber > 12 || monthNumber == null || monthNumber == Infinity || monthNumber == -Infinity || monthNumber == 0) {
-            throw new Error('Invalid value of month')
-            };
-        if (Number(yearNumber) != Number(yearNumber) || yearNumber != yearNumber || yearNumber < 0 || yearNumber == null || yearNumber == Infinity || yearNumber == -Infinity || yearNumber == 0) {
-            throw new Error('Invalid value of year')
-            };
+    isNumber(dayNumber);
+    isNumber(monthNumber);
+    isNumber(yearNumber);
+    if (dayNumber > 31) {
+    throw new Error('Invalid value of day')
+    };
+    if (monthNumber > 12){
+    throw new Error('Invalid value of month')
+    };
 
     let century = Math.floor(yearNumber/100);
     let centuryShift;
@@ -80,11 +86,11 @@ function dayOfWeek(date) {
 
 function getDate(dd,mm,yyyy) {return `${dd}.${mm}.${yyyy}`}
 
-yyyy = 1997;
+let yyyy = 1997;
 do {
-  dayOfWeek(getDate(13,07,yyyy));
+  dayOfWeek(getDate(13,7,yyyy));
   if (dayOfWeek(getDate(13,07,yyyy)) == 'Friday') {
   alert (yyyy);
   };
   yyyy++
-} while (yyyy !== 2002);
+} while (yyyy !== 2117);
