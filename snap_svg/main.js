@@ -23,13 +23,6 @@ let updatePath = function() {
     })
 }
 
-let tree = paper.path("").attr({
-    stroke: "#222",
-    fill: "transparent",
-    strokeWidth: 3
-})
-
-
 let move = function(dx, dy, xpos, ypos) {
     var radius = this.getBBox().r0;
     if (xpos <= 800 - radius && ypos <= 400 - radius && xpos > radius && ypos > radius) {
