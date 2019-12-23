@@ -1,9 +1,9 @@
 "use strict";
 
 let style = {
-    fill: '#387',
-    stroke: '#222',
-    strokeWidth: 5
+    fill: '#D20F0F',
+    stroke: '#FF4400',
+    strokeWidth: 2,
 };
 
 let paper = Snap(800, 400)
@@ -23,6 +23,8 @@ let updatePath = function() {
     })
 }
 
+let rec = paper.rect(0, 0, 20, 20).attr(style).drag()
+
 let move = function(dx, dy, xpos, ypos) {
     var radius = this.getBBox().r0;
     if (xpos <= 800 - radius && ypos <= 400 - radius && xpos > radius && ypos > radius) {
@@ -36,16 +38,17 @@ let move = function(dx, dy, xpos, ypos) {
     console.log("Borders are reached")
 }
 
-paper.click( e => {
+paper.click(function(e) {
     if (e.target.tagName == 'svg' || e.target.tagName == 'path') {
         paper.circle(e.offsetX, e.offsetY, 15)
             .attr(style)
-            .mouseover(function(){ this.stop().animate({r:25}, 500, mina.elastic()) })
-            .mouseout(function(){ this.stop().animate({r:15}, 300, mina.easeinout()) })
+            .mouseover(function(){ this.stop().animate({r:25}, 600, mina.bounce) })
+            .mouseout(function(){ this.stop().animate({r:15}, 400, mina.backin) })
             .data("i", pathArray.length)
-            .drag(move,
-            () => path.stop().animate({opacity: .2}, 200, mina.easeinout()),
-            () => path.stop().animate({opacity: 1}, 500, mina.easeinout()))
+            .drag(
+            move,
+            () => path.stop().animate({opacity: .2}, 200, mina.easeinout),
+            () => path.stop().animate({opacity: 1}, 500, mina.easeinout))
 
         pathArray.push({
             x : e.offsetX,
@@ -54,4 +57,6 @@ paper.click( e => {
 
         updatePath()
     }
-})
+});
+
+
