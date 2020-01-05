@@ -33,23 +33,26 @@ To accomplish this task, next function should be implemented:
 -  function printTable(array) takes an array of objects with the same properties and print table to console.
 Each column in a table is a name of object's property and each record represents a particular object in the array.
 Next array will be printed as follows:
+```
 let arr = [{angle: 90, real: 1, calculated: 0.99}, {angle: 30, real: 0.5, calculated: 0.501}]
 >
 |         angle |          real |    calculated |
-<br>
 |            90 |             1 |          0.99 |
-<br>
 |            30 |           0.5 |         0.501 |
+```
 
 The size of column must be 15 symbols and text inside cell must be aligned to the right side with one space before the border.
+<br>
 To implement this function use `for in` instruction for create a record and `for` loop to create full table.
-
+<br>
 - function generateTable(precision, from, to, customTrig, realTrig) takes precision of sin or cos function (in range from 0.001 to 1),
 from angle (can be from 0 to 360), to angle (can be from 0 to 360), trig function which calculates sin or cos of specified angle with the precision and
 realTrig is a standard trigonometric function Math.sin() or Math.cos().
+<br>
  The generateTable returns array of objects with next structure: {angle: number, real: number, calculated: number}, where `real` field is got from realTrig and
  calculated -- from customTrig.
  The step between angles is 10 degrees, it means if one pass from=0 and to=30 to generateTable, it will return objects for four angles: 0, 10, 20, 30.
+ <br>
  To implement this function use `for` loop to iterate angles with step in 10 degrees.
 
 - Your custom trig function:
