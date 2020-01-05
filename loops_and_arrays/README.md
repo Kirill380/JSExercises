@@ -36,7 +36,9 @@ Next array will be printed as follows:
 let arr = [{angle: 90, real: 1, calculated: 0.99}, {angle: 30, real: 0.5, calculated: 0.501}]
 >
 |         angle |          real |    calculated |
+<br>
 |            90 |             1 |          0.99 |
+<br>
 |            30 |           0.5 |         0.501 |
 
 The size of column must be 15 symbols and text inside cell must be aligned to the right side with one space before the border.
@@ -54,8 +56,8 @@ realTrig is a standard trigonometric function Math.sin() or Math.cos().
 1) sin: ![sin-equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%2B1%7D%7D%7B%282i%2B1%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 2) cos: ![cos-equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%7D%7D%7B%282i%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
  Where:
-  n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
-  ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) - is summation symbol which just means sum up all under the sigma, i.e. ![sum-ex-1](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7B3%7Di%20%3D%200%20%2B%201%20%2B%202%20%2B%203%20%3D%206%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+  - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
+  - ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) - is summation symbol which just means sum up all under the sigma, i.e. ![sum-ex-1](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7B3%7Di%20%3D%200%20%2B%201%20%2B%202%20%2B%203%20%3D%206%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
  The function signature is sin(angle, precision), angle is measured in radians so to convert degrees to radians use next formula: angle in radians = ((angle in degrees)*PI)/180
  To implement this function use `while` loop to sum up elements of the equations described above and `while` condition is current element is greater then the precision.
 
@@ -71,11 +73,12 @@ let arrayOfSin = generateTable(0.01, 0, 90, customSin, Math.sin);
 printTable(arrayOfSin);
 ```
 
-Useful links:
-radians -- https://www.mathsisfun.com/geometry/radians.html
-factorial -- https://www.mathsisfun.com/numbers/factorial.html
-sum notation -- https://www.mathsisfun.com/algebra/sigma-notation.html
-(optional) sine, cosine and tangent -- https://www.mathsisfun.com/sine-cosine-tangent.html
+  Useful links:
+  
+- radians -- https://www.mathsisfun.com/geometry/radians.html
+- factorial -- https://www.mathsisfun.com/numbers/factorial.html
+- sum notation -- https://www.mathsisfun.com/algebra/sigma-notation.html
+- (optional) sine, cosine and tangent -- https://www.mathsisfun.com/sine-cosine-tangent.html
 
 3. Sorting employees
 There is a global variable named employee which contains array of objects having next structure:
