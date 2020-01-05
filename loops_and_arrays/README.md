@@ -1,6 +1,6 @@
-Your homework:
+# Your homework:
 
-1. Validating Credit Card Numbers
+## 1. Validating Credit Card Numbers
 Have you ever wondered how websites validate your credit card
 number when you shop online? They don’t check a massive database
 of numbers, and they don’t use magic. In fact, most credit providers
@@ -27,7 +27,7 @@ What array methods should be used for this exercise:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-2. Table of sin and cos
+## 2. Table of sin and cos
 In this section you should write a function which will print sin or cos table in a specified range and with a particular precision.
 To accomplish this task, next function should be implemented:
 -  function printTable(array) takes an array of objects with the same properties and print table to console.
@@ -85,7 +85,7 @@ printTable(arrayOfSin);
 - sum notation -- https://www.mathsisfun.com/algebra/sigma-notation.html
 - (optional) sine, cosine and tangent -- https://www.mathsisfun.com/sine-cosine-tangent.html
 
-3. Sorting employees
+## 3. Sorting employees
 There is a global variable named employee which contains array of objects having next structure:
 
 ```javascript
