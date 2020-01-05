@@ -46,21 +46,23 @@ The size of column must be 15 symbols and text inside cell must be aligned to th
 To implement this function use `for in` instruction for create a record and `for` loop to create full table.
 <br>
 - function generateTable(precision, from, to, customTrig, realTrig) takes precision of sin or cos function (in range from 0.001 to 1),
-from angle (can be from 0 to 360), to angle (can be from 0 to 360), trig function which calculates sin or cos of specified angle with the precision and
-realTrig is a standard trigonometric function Math.sin() or Math.cos().
+from angle (can be from 0 to 360), to angle (can be from 0 to 360), trig function which calculates sin or cos of specified angle with the precision and realTrig is a standard trigonometric function Math.sin() or Math.cos().
 <br>
- The generateTable returns array of objects with next structure: {angle: number, real: number, calculated: number}, where `real` field is got from realTrig and
- calculated -- from customTrig.
+ The generateTable returns array of objects with next structure: {angle: number, real: number, calculated: number}, where `real` field is got from realTrig and calculated -- from customTrig.
+ <br>
  The step between angles is 10 degrees, it means if one pass from=0 and to=30 to generateTable, it will return objects for four angles: 0, 10, 20, 30.
  <br>
  To implement this function use `for` loop to iterate angles with step in 10 degrees.
 
 - Your custom trig function:
-1) sin: ![sin-equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%2B1%7D%7D%7B%282i%2B1%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-2) cos: ![cos-equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%7D%7D%7B%282i%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+1) sin: ![sin_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%2B1%7D%7D%7B%282i%2B1%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+<br>
+2) cos: ![cos_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%7D%7D%7B%282i%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+<br>
  Where:
   - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
-  - ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) - is summation symbol which just means sum up all under the sigma, i.e. ![sum-ex-1](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7B3%7Di%20%3D%200%20%2B%201%20%2B%202%20%2B%203%20%3D%206%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+  <br>
+  - ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) - is summation symbol which just means sum up all under the sigma, i.e. ![sum_ex_](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7B3%7Di%20%3D%200%20%2B%201%20%2B%202%20%2B%203%20%3D%206%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
  The function signature is sin(angle, precision), angle is measured in radians so to convert degrees to radians use next formula: angle in radians = ((angle in degrees)*PI)/180
  To implement this function use `while` loop to sum up elements of the equations described above and `while` condition is current element is greater then the precision.
 
