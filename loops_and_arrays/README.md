@@ -27,9 +27,9 @@ What array methods should be used for this exercise:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-## 2. Table of sin and cos
+## 2. Table of sine and cose
 In this section you should write a function which will print sin or cos table in a specified range and with a particular precision.
-To accomplish this task, next function should be implemented:
+To accomplish this task, next functions should be implemented:
 ### Function `printTable(array)` 
 Takes an array of objects with the same properties and print table to console.
 Each column in a table is a name of object's property and each record represents a particular object in the array.
