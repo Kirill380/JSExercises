@@ -52,14 +52,14 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
 
 ### Your custom trig functions
 1) sin:\
- ![sin_equation](maclaurin_sin.png)
+ ![sin_equation](img/maclaurin_sin.png)
 2) cos:\
- ![cos_equation](maclaurin_cos.png)
+ ![cos_equation](img/maclaurin_cos.png)
 
  Where:
   - n! -- is factorial (arithmetic function) which do multiplication of all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
-  - ![sum](sum_symbol.gif) -- is summation symbol which just sum up all elements under the sigma, for example:\
-   ![sum_ex_1](example_sum.gif)
+  - ![sum](img/sum_symbol.gif) -- is summation symbol which just sum up all elements under the sigma, for example:\
+   ![sum_ex_1](img/example_sum.gif)
    
  The function signature is `sin(angle, precision)`, angle is measured in radians so to convert degrees to radians use next formula:\
  `angle in radians = ((angle in degrees) * PI) / 180`
@@ -118,10 +118,31 @@ function comparator(emp1, emp2) {
 ```
 
 To implement sorting one will use the bubble sort algorithm.
-The algorithm steps:
+The algorithm steps for:
 
-1. Starting with the first element(index = 0), compare the current element with the next element of the array.
-2. If the current element is greater than the next element of the array, swap them.
-3. If the current element is less than the next element, move to the next element.
-4. Repeat Step 1.
-//TBD
+1. Starting from the first index (0)
+2. Compare the current and the next elements.
+3. If the current element is greater than the elements element, they are swapped.
+4. Increase the index
+5. If the index is the size of array then finish processing otherwise move to step 2
+
+In the end of this loop the largest element among the unsorted elements is placed at the end.
+But to get all elements in the array sorted we need to repeat above steps (1-5) on sub-array - original array without last element.
+
+Number of the reception is equal to the original array length, so on each iteration the sorted elements will gather in the tail of the array.
+
+For better underspending here is pectoral example on array of size 4:
+![bubble_sort_anim](img/Bubble-sort-0_1.png)
+![bubble_sort_anim](img/Bubble-sort-1_1.png)
+![bubble_sort_anim](img/Bubble-sort-2_1.png)
+![bubble_sort_anim](img/Bubble-sort-3_1.png)
+
+And animation:
+![bubble_sort_anim](img/BubbleSort.gif)
+
+So as result of this task one should implement sort function, and three comparators for name, gross and hireDate fields.
+Also as an additional task all implemented functions are recommended to cover with neg and pos tests.
+
+Useful links:
+- compare strings in JS -- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
+- compare dates in JS -- https://stackoverflow.com/a/493018
