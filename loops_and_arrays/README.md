@@ -48,7 +48,7 @@ To implement this function use `for in` instruction for create a record and `for
 <br>
 ### Function `generateTable(precision, from, to, customTrig, realTrig)` 
 Takes precision of sin or cos function (in range from 0.001 to 1), from angle (can be from 0 to 360), to angle (can be from 0 to 360), trig function which calculates sin or cos of specified angle with the precision and `realTrig` is a standard trigonometric function `Math.sin()` or `Math.cos()`.
-<br>
+ <br>
  The `generateTable` returns array of objects with next structure: {angle: number, real: number, calculated: number}, where `real` field is got from realTrig and calculated -- from customTrig.
  <br>
  The step between angles is 10 degrees, it means if one pass from=0 and to=30 to generateTable, it will return objects for four angles: 0, 10, 20, 30.
@@ -56,8 +56,8 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
  To implement this function use `for` loop to iterate angles with step in 10 degrees.
 
 ### Your custom trig functions
-1) sin: ![sin_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%2B1%7D%7D%7B%282i%2B1%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-2) cos: ![cos_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%28-1%29%5E%7Bi%7D%2A%5Cfrac%7Bx%5E%7B2i%7D%7D%7B%282i%29%21%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+1) sin: ![sin_equation](http://www.sciweavers.org/tex2img.php?eq=&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+2) cos: ![cos_equation](http://www.sciweavers.org/tex2img.php?eq=&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 <br>
  Where:
  <br>
