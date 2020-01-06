@@ -61,7 +61,9 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
   - ![sum](sum_symbol.gif) -- is summation symbol which just sum up all elements under the sigma, for example:\
    ![sum_ex_1](example_sum.gif)
    
- The function signature is `sin(angle, precision)`, angle is measured in radians so to convert degrees to radians use next formula: angle in `radians = ((angle in degrees) * PI) / 180`
+ The function signature is `sin(angle, precision)`, angle is measured in radians so to convert degrees to radians use next formula:\
+ `angle in radians = ((angle in degrees) * PI) / 180`
+
  To implement this function use `while` loop to sum up elements of the equations described above and `while` condition is current element is greater then the precision.
 
 So in the end the four function must be implemented, example usage:
