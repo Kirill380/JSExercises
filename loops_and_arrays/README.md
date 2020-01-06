@@ -51,18 +51,15 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
  To implement this function use `for` loop to iterate angles with step in 10 degrees.
 
 ### Your custom trig functions
-1) sin: ![sin_equation](maclaurin_sin.png)
-2) cos: ![cos_equation](maclaurin_cos.png)
-<br>
- Where:
- <br>
-  - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
+1) sin:\
+ ![sin_equation](maclaurin_sin.png)
+2) cos:\
+ ![cos_equation](maclaurin_cos.png)
 
  Where:
-  - n! -- is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
-  - ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-   -- is summation symbol which just means sum up all under the sigma, for example:\
-   ![sum_ex_1](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7B3%7Di%3D0%2B1%2B2%2B3%3D6%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+  - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
+  - ![sum](sum_symbol.gif) -- is summation symbol which just means sum up all under the sigma, for example:\
+   ![sum_ex_1](example_sum.gif)
    
  The function signature is `sin(angle, precision)`, angle is measured in radians so to convert degrees to radians use next formula: angle in `radians = ((angle in degrees) * PI) / 180`
  To implement this function use `while` loop to sum up elements of the equations described above and `while` condition is current element is greater then the precision.
