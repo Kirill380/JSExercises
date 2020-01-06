@@ -132,7 +132,7 @@ But to get all elements in the array sorted we need to repeat above steps (1-5) 
 Number of the reception is equal to the original array length, so on each iteration the sorted elements will gather in the tail of the array.
 
 For better underspending here is pectoral example on array of size 4:\
-![bubble_sort_anim1](img/Bubble-sort-0_1.png)
+![bubble_sort_anim1](img/Bubble-sort-0_1.png | width=100)
 ![bubble_sort_anim2](img/Bubble-sort-1_1.png)
 ![bubble_sort_anim3](img/Bubble-sort-2_1.png)
 ![bubble_sort_anim4](img/Bubble-sort-3_1.png)
