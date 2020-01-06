@@ -131,13 +131,13 @@ But to get all elements in the array sorted we need to repeat above steps (1-5) 
 
 Number of the reception is equal to the original array length, so on each iteration the sorted elements will gather in the tail of the array.
 
-For better underspending here is pectoral example on array of size 4:
-![bubble_sort_anim](img/Bubble-sort-0_1.png)
-![bubble_sort_anim](img/Bubble-sort-1_1.png)
-![bubble_sort_anim](img/Bubble-sort-2_1.png)
-![bubble_sort_anim](img/Bubble-sort-3_1.png)
+For better underspending here is pectoral example on array of size 4:\
+![bubble_sort_anim](img/Bubble-sort-0_1.png=436x578)
+![bubble_sort_anim](img/Bubble-sort-1_1.png=436x578)
+![bubble_sort_anim](img/Bubble-sort-2_1.png=436x578)
+![bubble_sort_anim](img/Bubble-sort-3_1.png=436x578)
 
-And animation:
+And animation:\
 ![bubble_sort_anim](img/BubbleSort.gif)
 
 So as result of this task one should implement sort function, and three comparators for name, gross and hireDate fields.
