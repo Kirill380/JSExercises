@@ -43,16 +43,16 @@ let arr = [{angle: 90, real: 1, calculated: 0.99}, {angle: 30, real: 0.5, calcul
 ```
 
 The size of column must be 15 symbols and text inside cell must be aligned to the right side with one space before the border.
-<br>
+<br/>
 To implement this function use `for in` instruction for create a record and `for` loop to create full table.
-<br>
+<br/>
 ### Function `generateTable(precision, from, to, customTrig, realTrig)` 
 Takes precision of sin or cos function (in range from 0.001 to 1), from angle (can be from 0 to 360), to angle (can be from 0 to 360), trig function which calculates sin or cos of specified angle with the precision and `realTrig` is a standard trigonometric function `Math.sin()` or `Math.cos()`.
- <br>
+<br/>
  The `generateTable` returns array of objects with next structure: {angle: number, real: number, calculated: number}, where `real` field is got from realTrig and calculated -- from customTrig.
- <br>
+<br/>
  The step between angles is 10 degrees, it means if one pass from=0 and to=30 to generateTable, it will return objects for four angles: 0, 10, 20, 30.
- <br>
+ <br/>
  To implement this function use `for` loop to iterate angles with step in 10 degrees.
 
 ### Your custom trig functions
@@ -60,9 +60,9 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
 ![sin_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 2) cos: 
 ![cos_equation](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-<br>
+<br/>
  Where:
- <br>
+<br/>
   - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
   - big sigma:
   ![sum](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20f%28i%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
