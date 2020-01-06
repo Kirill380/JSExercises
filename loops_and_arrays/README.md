@@ -58,7 +58,7 @@ Takes precision of sin or cos function (in range from 0.001 to 1), from angle (c
 
  Where:
   - n! - is a function (arithmetic operator) which do multiplication of  all positive integers less than or equal to n, i.e. 4! = 4*3*2*1 = 24, 2! = 2*1 = 2 (note 0! = 1)
-  - ![sum](sum_symbol.gif) -- is summation symbol which just means sum up all under the sigma, for example:\
+  - ![sum](sum_symbol.gif) -- is summation symbol which just sum up all elements under the sigma, for example:\
    ![sum_ex_1](example_sum.gif)
    
  The function signature is `sin(angle, precision)`, angle is measured in radians so to convert degrees to radians use next formula: angle in `radians = ((angle in degrees) * PI) / 180`
