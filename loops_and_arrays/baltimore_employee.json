@@ -1,0 +1,443 @@
+[
+ {
+   "name": "Aaron,Kareem D",
+   "jobTitile": "Utilities Inst Repair I",
+   "deptId": "A50550",
+   "descr": "DPW-Water & Waste Water (550)",
+   "hireDate": "08/27/2018 12:00:00 AM",
+   "net": 32470,
+   "gross": 25743.94
+ },
+ {
+   "name": "Aaron,Patricia G",
+   "jobTitile": "Facilities/Office Services II",
+   "deptId": "A03031",
+   "descr": "OED-Employment Dev (031)",
+   "hireDate": "10/24/1979 12:00:00 AM",
+   "net": 60200,
+   "gross": 57806.13
+ },
+ {
+   "name": "Abadir,Adam O",
+   "jobTitile": "Council Technician",
+   "deptId": "A02002",
+   "descr": "City Council (002)",
+   "hireDate": "12/12/2016 00:00",
+   "net": 64823,
+   "gross": 64774.11
+ },
+ {
+   "name": "Abaku,Aigbolosimuan O",
+   "jobTitile": "Police Officer",
+   "deptId": "A99094",
+   "descr": "Police Department (094)",
+   "hireDate": "04/17/2018 12:00:00 AM",
+   "net": 53640,
+   "gross": 59361.55
+ },
+ {
+   "name": "Abbeduto,Mack",
+   "jobTitile": "Assistant State's Attorney",
+   "deptId": "A29011",
+   "descr": "States Attorneys Office (011)",
+   "hireDate": "05/22/2017 12:00:00 AM",
+   "net": 68562,
+   "gross": 61693.59
+ },
+ {
+   "name": "Abbott,Ethan N",
+   "jobTitile": "Recreation Arts Instructor",
+   "deptId": "A68002",
+   "descr": "R&P-Parks (002)",
+   "hireDate": "04/11/2018 00:00",
+   "net": 33280,
+   "gross": 26156.48
+ },
+ {
+   "name": "Abbott-Cole,Michelle",
+   "jobTitile": "Operations Officer III",
+   "deptId": "A90005",
+   "descr": "TRANS-Traffic (005)",
+   "hireDate": "11/28/2014 12:00:00 AM",
+   "net": 75110,
+   "gross": 75529.99
+ },
+ {
+   "name": "Abdal-Rahim,Naim A",
+   "jobTitile": "Fire Pump Operator Suppression",
+   "deptId": "A64120",
+   "descr": "Fire Department (120)",
+   "hireDate": "03/30/2011 12:00:00 AM",
+   "net": 69595,
+   "gross": 82132.61
+ },
+ {
+   "name": "Abdi,Ezekiel W",
+   "jobTitile": "Police Sergeant",
+   "deptId": "A99160",
+   "descr": "Police Department (160)",
+   "hireDate": "06/14/2007 12:00:00 AM",
+   "net": 93284,
+   "gross": 122992.1
+ },
+ {
+   "name": "Abdul Adl,Attrice A",
+   "jobTitile": "Radio Dispatcher Sheriff",
+   "deptId": "A38410",
+   "descr": "Sheriff's Office (410)",
+   "hireDate": "09/02/1999 00:00",
+   "net": 50079,
+   "gross": 58459.78
+ },
+ {
+   "name": "Abdul Aziz,Hajr E",
+   "jobTitile": "Swimming Pool Operator",
+   "deptId": "P04002",
+   "descr": "R&P-Recreation (part-time) (",
+   "hireDate": "06/01/2017 00:00",
+   "net": 28554,
+   "gross": 15807.64
+ },
+ {
+   "name": "Abdul Aziz,Yaqub M",
+   "jobTitile": "Swimming Pool Operator",
+   "deptId": "P04002",
+   "descr": "R&P-Recreation (part-time) (",
+   "hireDate": "06/01/2017 00:00",
+   "net": 28554,
+   "gross": 6417.9
+ },
+ {
+   "name": "Abdul Saboor,Dana N",
+   "jobTitile": "Paralegal",
+   "deptId": "A99393",
+   "descr": "Police Department (393)",
+   "hireDate": "04/13/1998 12:00:00 AM",
+   "net": 57857,
+   "gross": 35715.2
+ },
+ {
+   "name": "Abdul,Jalil",
+   "jobTitile": "Engineer I",
+   "deptId": "A50101",
+   "descr": "DPW-Water & Waste Water (101)",
+   "hireDate": "07/17/2017 12:00:00 AM",
+   "net": 64505,
+   "gross": 65577.5
+ },
+ {
+   "name": "Abdul-Jabbar,Bushra A",
+   "jobTitile": "Social Service Coordinator",
+   "deptId": "A65028",
+   "descr": "HLTH-Health Department (028)",
+   "hireDate": "04/14/2008 12:00:00 AM",
+   "net": 46395,
+   "gross": 46359.55
+ },
+ {
+   "name": "Abdul-Khaliq,Amahl",
+   "jobTitile": "Recreation Leader II",
+   "deptId": "A04005",
+   "descr": "R&P-Recreation (005)",
+   "hireDate": "06/06/2019 00:00",
+   "net": 32131,
+   "gross": null
+ },
+ {
+   "name": "Abdullah,Beverly A",
+   "jobTitile": "Office Support Specialist III",
+   "deptId": "A06004",
+   "descr": "Housing & Community Dev (004)",
+   "hireDate": "12/01/1986 00:00",
+   "net": 41757,
+   "gross": 44522.96
+ },
+ {
+   "name": "Abdullahi,Sharon M",
+   "jobTitile": "911 Operator",
+   "deptId": "A64604",
+   "descr": "Fire Department (604)",
+   "hireDate": "06/10/2004 00:00",
+   "net": 56322,
+   "gross": 53751.88
+ },
+ {
+   "name": "Abdullateef,Muhammed L",
+   "jobTitile": "Supt of Public Bldg Repair",
+   "deptId": "A85001",
+   "descr": "General Services (001)",
+   "hireDate": "05/09/2019 00:00",
+   "net": 78000,
+   "gross": 9000
+ },
+ {
+   "name": "Abdulrahman,Mustafa H",
+   "jobTitile": "Police Officer Trainee",
+   "deptId": "A99416",
+   "descr": "Police Department (416)",
+   "hireDate": "12/28/2018 12:00:00 AM",
+   "net": 53512,
+   "gross": 25347.99
+ },
+ {
+   "name": "Abdul-Saboor,Jamillah",
+   "jobTitile": "Printer Library",
+   "deptId": "A75055",
+   "descr": "Enoch Pratt Free Library (055)",
+   "hireDate": "07/27/2009 12:00:00 AM",
+   "net": 44584,
+   "gross": 42555.83
+ },
+ {
+   "name": "Abdunafi,Karim",
+   "jobTitile": "Community Aide",
+   "deptId": "A04015",
+   "descr": "R&P-Recreation (015)",
+   "hireDate": "06/13/2019 12:00:00 AM",
+   "net": 24960,
+   "gross": null
+ },
+ {
+   "name": "Abdur-Rahman,Diane",
+   "jobTitile": "Facilities/Office Services I",
+   "deptId": "A03092",
+   "descr": "OED-Employment Dev (092)",
+   "hireDate": "03/27/2017 12:00:00 AM",
+   "net": 25363,
+   "gross": 25649.94
+ },
+ {
+   "name": "Abdurrahman,Saleh Z",
+   "jobTitile": "Lifeguard I",
+   "deptId": "P04002",
+   "descr": "R&P-Recreation (part-time) (",
+   "hireDate": "06/04/2019 00:00",
+   "net": 23920,
+   "gross": 1
+ },
+ {
+   "name": "Abebe,Miraf E",
+   "jobTitile": "Auditor II",
+   "deptId": "A24002",
+   "descr": "COMP-Audits (002)",
+   "hireDate": "02/06/2012 00:00",
+   "net": 67236,
+   "gross": 60600.92
+ },
+ {
+   "name": "Abend-Kollin,Emily L",
+   "jobTitile": "Fleet Quality Control Analyst",
+   "deptId": "A85301",
+   "descr": "General Services (301)",
+   "hireDate": "01/05/2017 00:00",
+   "net": 47828,
+   "gross": 49133.11
+ },
+ {
+   "name": "Abid,Amal",
+   "jobTitile": "Engineer II",
+   "deptId": "A49102",
+   "descr": "TRANS-Highways (102)",
+   "hireDate": "12/02/2013 00:00",
+   "net": 71774,
+   "gross": 71630.83
+ },
+ {
+   "name": "Abid,Paula",
+   "jobTitile": "Recreation Arts Instructor",
+   "deptId": "A04009",
+   "descr": "R&P-Recreation (009)",
+   "hireDate": "06/25/2007 12:00:00 AM",
+   "net": 24960,
+   "gross": 3591.96
+ },
+ {
+   "name": "Abraham,Donta D",
+   "jobTitile": "Laborer Hourly",
+   "deptId": "B70357",
+   "descr": "DPW-Solid Waste (wkly) (357)",
+   "hireDate": "10/16/2000 12:00:00 AM",
+   "net": 34247,
+   "gross": 52336.71
+ },
+ {
+   "name": "Abraham,Santhosh",
+   "jobTitile": "Accountant II",
+   "deptId": "A50100",
+   "descr": "DPW-Water & Waste Water (100)",
+   "hireDate": "12/31/2007 12:00:00 AM",
+   "net": 60700,
+   "gross": 61478.56
+ },
+ {
+   "name": "Abraham,Sharon M",
+   "jobTitile": "Housing Inspector",
+   "deptId": "A06014",
+   "descr": "Housing & Community Dev (014)",
+   "hireDate": "12/15/1997 12:00:00 AM",
+   "net": 55512,
+   "gross": 55674.48
+ },
+ {
+   "name": "Abraham,Terence J",
+   "jobTitile": "Construction Project Supv II",
+   "deptId": "A85604",
+   "descr": "General Services (604)",
+   "hireDate": "10/29/2015 12:00:00 AM",
+   "net": 73868,
+   "gross": 74349.02
+ },
+ {
+   "name": "Abrahams,Brandon A",
+   "jobTitile": "Police Officer",
+   "deptId": "A99034",
+   "descr": "Police Department (034)",
+   "hireDate": "01/20/2015 12:00:00 AM",
+   "net": 68487,
+   "gross": 69665.06
+ },
+ {
+   "name": "Abrams,Maxine",
+   "jobTitile": "Collection Representative I",
+   "deptId": "A14003",
+   "descr": "FIN-Collections (003)",
+   "hireDate": "08/26/2002 12:00:00 AM",
+   "net": 41208,
+   "gross": 42043.79
+ },
+ {
+   "name": "Abrams,Terry",
+   "jobTitile": "Community Aide",
+   "deptId": "A04015",
+   "descr": "R&P-Recreation (015)",
+   "hireDate": "06/19/2014 12:00:00 AM",
+   "net": 24960,
+   "gross": 3240
+ },
+ {
+   "name": "Abu Khdeir,Abrar M",
+   "jobTitile": "Operations Officer II",
+   "deptId": "A85301",
+   "descr": "General Services (301)",
+   "hireDate": "06/21/2008 12:00:00 AM",
+   "net": 83857,
+   "gross": 3081.9
+ },
+ {
+   "name": "Abugo,Susan",
+   "jobTitile": "Community Hlth Nurse II 10Mth",
+   "deptId": "A65102",
+   "descr": "HLTH-Health Department (102)",
+   "hireDate": "08/27/2003 12:00:00 AM",
+   "net": 64389,
+   "gross": 63058.95
+ },
+ {
+   "name": "Abu-Hakim,Kendall",
+   "jobTitile": "Gen Supt Trans Maintenance",
+   "deptId": "A49300",
+   "descr": "TRANS-Highways (300)",
+   "hireDate": "01/09/2012 00:00",
+   "net": 71317,
+   "gross": 65251.42
+ },
+ {
+   "name": "Abukhdeir,Tasnem M",
+   "jobTitile": "Public Health Rep II",
+   "deptId": "A65026",
+   "descr": "HLTH-Health Department (026)",
+   "hireDate": "07/13/2017 12:00:00 AM",
+   "net": 42131,
+   "gross": 40357.94
+ },
+ {
+   "name": "Achhammer,Matthew J",
+   "jobTitile": "Contract Srvc Specialist II",
+   "deptId": "A09001",
+   "descr": "Liquor License Board (001)",
+   "hireDate": "04/09/2018 00:00",
+   "net": 74277,
+   "gross": 44013.52
+ },
+ {
+   "name": "Ackerman,Alexa E",
+   "jobTitile": "Assistant Solicitor",
+   "deptId": "A30001",
+   "descr": "Law Department (001)",
+   "hireDate": "06/08/2015 00:00",
+   "net": 74000,
+   "gross": 73607.18
+ },
+ {
+   "name": "Ackwood,Karen",
+   "jobTitile": "Service Assistant Library",
+   "deptId": "A75008",
+   "descr": "Enoch Pratt Free Library (008)",
+   "hireDate": "02/19/1992 12:00:00 AM",
+   "net": 21008,
+   "gross": 6780.28
+ },
+ {
+   "name": "Ackwood,Kristina E",
+   "jobTitile": "911 Operator",
+   "deptId": "A64604",
+   "descr": "Fire Department (604)",
+   "hireDate": "09/12/2016 00:00",
+   "net": 45872,
+   "gross": 44302.21
+ },
+ {
+   "name": "Acord,Ashley M",
+   "jobTitile": "Police Officer EID",
+   "deptId": "A99406",
+   "descr": "Police Department (406)",
+   "hireDate": "04/10/2014 00:00",
+   "net": 73999,
+   "gross": 54113.2
+ },
+ {
+   "name": "Acosta Lopez,Bryan",
+   "jobTitile": "Police Officer",
+   "deptId": "A99004",
+   "descr": "Police Department (004)",
+   "hireDate": "02/13/2017 12:00:00 AM",
+   "net": 54454,
+   "gross": 66450.77
+ },
+ {
+   "name": "Acosta,Arnulfo J",
+   "jobTitile": "Police Officer Trainee",
+   "deptId": "A99416",
+   "descr": "Police Department (416)",
+   "hireDate": "07/08/2019 00:00",
+   "net": 53512,
+   "gross": null
+ },
+ {
+   "name": "Acosta,Jahmoor A",
+   "jobTitile": "Police Officer",
+   "deptId": "A99125",
+   "descr": "Police Department (125)",
+   "hireDate": "10/03/2016 00:00",
+   "net": 54454,
+   "gross": 79035.45
+ },
+ {
+   "name": "Acquaviva,Megan",
+   "jobTitile": "Assistant State's Attorney",
+   "deptId": "A29005",
+   "descr": "States Attorneys Office (005)",
+   "hireDate": "10/07/2013 00:00",
+   "net": 74706,
+   "gross": 72459.36
+ },
+ {
+   "name": "Acree,Ennis D",
+   "jobTitile": "Fire Pump Operator Supp ALS",
+   "deptId": "A64131",
+   "descr": "Fire Department (131)",
+   "hireDate": "10/07/2002 00:00",
+   "net": 76441,
+   "gross": 77808.78
+ }
+]

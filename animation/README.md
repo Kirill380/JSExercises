@@ -20,8 +20,8 @@ Implementation steps:
 ```javascript
 function animateOf(anim) {
  return setInterval(function() {
-       let currSec = new Date().getSeconds()
-       anim(currSec)
+       let epochSec = Date.now() / 1000
+       anim(epochSec)
  }, 1000); //  1 sec
 }
 
