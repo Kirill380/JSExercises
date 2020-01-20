@@ -1,4 +1,5 @@
 svg {
     border: 1px solid black;
     cursor: pointer;
-}
+    background-color: '#E289B3'
+};
