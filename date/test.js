@@ -1,20 +1,20 @@
 describe("is leap year", function() {
 
-    it("2020 is leap year", function() {
-        assert.isTrue(isLeapYear(2020));
-    });
+        it("2020 is leap year", function() {
+            assert.isTrue(isLeapYear(2020));
+        });
 
-    it("2019 is leap year", function() {
-        assert.isFalse(isLeapYear(2019));
-    });
+        it("2019 is leap year", function() {
+            assert.isFalse(isLeapYear(2019));
+        });
 
-    it("1200 is leap year", function() {
-        assert.isTrue(isLeapYear(1200));
-    });
+        it("1200 is leap year", function() {
+            assert.isTrue(isLeapYear(1200));
+        });
 
-    it("1000 is not leap year", function() {
-        assert.isFalse(isLeapYear(1000));
-    });
+        it("1000 is not leap year", function() {
+            assert.isFalse(isLeapYear(1000));
+        });
 
     describe("throw exception on invalid value", function() {
 
