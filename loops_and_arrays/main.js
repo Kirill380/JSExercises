@@ -12,12 +12,22 @@ let result = cardArray.reduce((sum, curr) => sum + (Math.floor(curr/10) + curr%1
     if (result !== result) {
         throw new Error('Invalid card number');
     }
-return (result % 10 === 0)
+return (result % 10 == 0)
 }
 
-if (cardNumberValidation === true) {
+if (cardNumberValidation) {
     alert("Card is valid");
 } else {
     alert ("Card is not valid");
 }
 cardNumberValidation(cardNumber);
+
+
+// function customSin(angle, precision) { ... }
+// function customCos(angle, precision) { ... }
+// function generateTable(precision, from, to, customTrig, realTrig) { ... }
+// function printTable(array) { ... }
+//
+// let arrayOfSin = generateTable(0.01, 0, 90, customSin, Math.sin);
+// printTable(arrayOfSin);
+
