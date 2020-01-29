@@ -42,7 +42,6 @@ function customSin(degreeAngle, precision) {
     return sin;
 }
 
-alert (customSin(toradianAngle(30), 0.01));
 
 function customCos(degreeAngle, precision) {
     let i = 0;
@@ -56,7 +55,7 @@ function customCos(degreeAngle, precision) {
     return cos;
 }
 
-alert (customCos(toradianAngle(60), 0.01));
+
 
 
 function generateTable(precision, from, to, customTrig, realTrig) {
@@ -68,10 +67,24 @@ function generateTable(precision, from, to, customTrig, realTrig) {
     return table;
 }
 
-console.log(generateTable(0.01, 0, 90, customSin, Math.sin));
 
-// // function printTable(array) { ... }
-// //
-// // let arrayOfSin = generateTable(0.01, 0, 90, customSin, Math.sin);
-// // printTable(arrayOfSin);
-//
+
+function printTable(array) {
+    let row = [(`|      angle |       real | calculated `)];
+    for (let i = 0; i <= array.length; i++) {
+        let obj = array[i];
+        let arrayFromObj = [];
+        for (let key in obj) {
+            let value = obj[key];
+            let space = ` `;
+            arrayFromObj.push(`|` + space.repeat(11 - value.toFixed(3).toString().length) + value.toFixed(3) + ` `);
+        }
+        row.push(arrayFromObj.join(``));
+    }
+    console.log(row.join(`|\n`))
+}
+
+let arrayOfSin = generateTable(0.01, 0, 90, customSin, Math.sin);
+printTable(arrayOfSin);
+
+
